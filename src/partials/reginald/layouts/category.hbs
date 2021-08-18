@@ -1,0 +1,28 @@
+{{> reginald/sections/head bodyClasses="archive"}}
+
+{{> reginald/sections/site-header}}
+
+<main class="site-main" role="main">
+
+  <section class="content-container">
+    <header class="archive-header">
+      <h1>{{category}}</h1>
+    </header>
+
+    {{{@partial-block}}}
+
+    <nav class="navigation pagination" role="navigation" aria-label="Posts">
+		  <h2 class="screen-reader-text">Posts navigation</h2>
+		  <div class="nav-links">
+        <span aria-current="page" class="page-numbers current">
+        <span class="screen-reader-text">Page</span>1</span>
+        <a class="page-numbers" href="#"><span class="screen-reader-text">Page</span>2</a>
+        <span class="page-numbers dots">…</span>
+        <a class="page-numbers" href="#"><span class="screen-reader-text">Page</span>7</a>
+        <a class="next page-numbers" href="#">Next<span class="screen-reader-text">Next page</span></a>
+      </div>
+    </nav>
+  </section>
+</main>
+
+{{> reginald/sections/footer}}

@@ -1,0 +1,21 @@
+<article class="post">
+  <header class="entry-header">
+    <h2 class="entry-title"><a href="/{{themeslug}}/category/{{toLowerCase category}}/{{slug}}">{{title}}</a></h2>
+
+    <div class="entry-meta-header">
+      <span class="entry-meta__date"><a href="/{{themeslug}}/category/{{toLowerCase category}}/{{slug}}" aria-label="Posted: {{date}}">{{date}}</a></span>
+      <span class="entry-meta__author"><a href="/#" aria-label="Author: {{author}}">By {{author}}</a></span>
+    </div>
+  </header>
+
+  <a class="post-thumbnail" href="/{{themeslug}}/category/{{toLowerCase category}}/{{slug}}" aria-label="{{name}}">
+    <img src="/{{themeslug}}/assets/images/{{slug}}.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Featured Image" loading="lazy">
+  </a>
+
+  <div class="entry-content">
+    <p>
+      {{{@partial-block}}}
+      <a class="read-more-link button" href="/fell/category/{{toLowerCase category}}/{{slug}}">Read more</a>
+    </p>
+  </div>
+</article>

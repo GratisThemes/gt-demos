@@ -1,0 +1,23 @@
+{{> ruffie/sections/head bodyClasses="page"}}
+
+{{> ruffie/sections/header-nav}}
+
+{{> ruffie/sections/site-header}}
+
+<main class="site-main" role="main">
+
+  <section class="content-container">
+    <article class="post {{postClasses}}">
+      <header class="page-header">
+        <h1 class="entry-title">{{title}}</a></h1>
+      </header>
+
+      <div class="entry-content">
+        {{{@partial-block}}}
+      </div>
+    </article>
+  </section>
+
+</main>
+
+{{> ruffie/sections/footer}}

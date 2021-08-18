@@ -1,0 +1,31 @@
+{{> bidnis/sections/head bodyClasses="archive has-right-sidebar"}}
+
+{{> bidnis/sections/header-nav}}
+
+{{> bidnis/sections/site-header}}
+
+<main class="site-main" role="main">
+
+  <section class="content-container">
+    <header class="archive-header">
+      <h1>{{category}}</h1>
+    </header>
+
+    {{{@partial-block}}}
+
+    <nav class="navigation pagination" role="navigation" aria-label="Posts">
+      <h2 class="screen-reader-text">Posts navigation</h2>
+      <div class="nav-links">
+        <span aria-current="page" class="page-numbers current">1</span>
+        <a class="page-numbers" href="#">2</a>
+        <a class="page-numbers" href="#">3</a>
+        <a class="page-numbers" href="#">4</a>
+        <a class="next page-numbers" href="#">Next page<i class="fa fa-long-arrow-alt-right"></i></a>
+      </div>
+    </nav>
+  </section>
+
+  {{> bidnis/sections/sidebar-right}}
+</main>
+
+{{> bidnis/sections/footer}}

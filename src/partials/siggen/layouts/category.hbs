@@ -1,0 +1,26 @@
+{{> siggen/sections/head bodyClasses="archive has-right-sidebar"}}
+
+{{> siggen/sections/site-header}}
+
+{{> siggen/sections/hero}}
+
+<main class="site-main" role="main">
+
+  <section class="content-container">
+    <header class="archive-header">
+      <h1>{{category}}</h1>
+    </header>
+
+    {{{@partial-block}}}
+
+    <nav class="navigation posts-navigation" role="navigation" aria-label="Posts">
+		  <h2 class="screen-reader-text">Posts navigation</h2>
+		  <div class="nav-links">
+        <div class="nav-previous"><a href="#"><i class="fa fa-long-arrow-alt-left"></i>Back</a></div>
+        <div class="nav-next"><a href="#">Next<i class="fa fa-long-arrow-alt-right"></i></a></div>
+      </div>
+	  </nav>
+  </section>
+</main>
+
+{{> siggen/sections/footer}}

@@ -1,0 +1,25 @@
+<nav class="header-nav-container">
+  <input type="checkbox" id="header-nav-toggle" />
+
+  <label for="header-nav-toggle" class="header-nav-toggle-label">
+    <span></span>
+  </label><!-- .header-nav-toggle-label -->
+
+  <ul class="header-nav">
+    <li class="menu-item{{#isEqual slug 'home'}} current-menu-item{{/isEqual}}"><a href="/{{themeslug}}/">Home</a></li>
+    <li class="menu-item{{#isEqual slug 'news'}} current-menu-item{{/isEqual}}"><a href="/{{themeslug}}/category/news">News</a></li>
+    <li class="menu-item{{#isEqual slug 'about'}} current-menu-item{{/isEqual}}"><a href="/{{themeslug}}/about">About</a></li>
+    <li class="menu-item"><a href="https://wordpress.org/themes/{{themeslug}}">Download</a></li>
+    <li class="menu-item menu-item-has-children">
+      <a href="/#">Themes</a>
+      <ul>
+        <li><a href="/bidnis">Bidnis</a></li>
+        <li><a href="/fell">Fell</a></li>
+        <li><a href="/herschel">Herschel</a></li>
+        <li><a href="/reginald">Reginald</a></li>
+        <li><a href="/ruffie">Ruffie</a></li>
+        <li><a href="/siggen">Siggen</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
